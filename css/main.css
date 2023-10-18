@@ -1,0 +1,397 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    min-height: 100vh;
+}
+
+.element-wrapper {
+    display: grid;
+}
+
+.background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.background.bottom {
+    background-position: bottom center;
+}
+
+.title {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.title h1 {
+    font-family: "Bahnschrift";
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    background: rgb(1, 1, 1);
+    background: -moz-linear-gradient(180deg, rgb(1, 1, 1) 0%, rgb(63, 63, 63) 100%);
+    background: -webkit-linear-gradient(180deg, rgb(1, 1, 1) 0%, rgb(63, 63, 63) 100%);
+    background: linear-gradient(180deg, rgb(1, 1, 1) 0%, rgb(63, 63, 63) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 360px;
+    margin: auto;
+}
+
+
+button {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: block;
+    transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -webkit-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+button span {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 25px;
+    display: inline-block;
+    font-weight: 700;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-sub-text {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Inter";
+    color: #898383;
+}
+
+.century-logo {
+    display: block;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+.century-logo img {
+    display: block;
+    max-width: 166px;
+    width: 100%;
+    height: auto !important;
+}
+
+.terms-text {
+    color: #7E7E7E;
+    font-size: 12px;
+    font-family: "Inter";
+    padding-left: 11.1111111vw;
+    padding-right: 11.1111111vw;
+}
+
+footer {
+    display: grid;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer-menu a {
+    font-family: "Noto Sans";
+    font-weight: 400;
+    color: #000000;
+    font-size: 11px;
+    text-decoration: underline;
+    display: block;
+    text-transform: uppercase;
+    line-height: 36px;
+}
+.footer-menu a + a {
+    margin-left: 13px;
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Noto Sans Display";
+    font-size: 12px;
+    color: #000000;
+}
+
+
+.terms-additional {
+    display: none;
+    transform: translateY(-130px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+}
+.terms-additional.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+.austria-drei {
+    background-color: #101010;
+    color: #ffffff;
+    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+.austria-drei .century-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.austria-drei .century-logo img {
+    max-width: 86px;
+}
+.austria-drei .over-btn-text {
+    padding-left: 18px;
+    padding-right: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+}
+.austria-drei .over-btn-text .text-link {
+    text-decoration: underline;
+    color: #A59B9B;
+}
+.text-link{
+    text-decoration: underline;
+    color: #A59B9B;
+}
+.phone-input {
+    margin: 0;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border: 1px solid #E7E7E7;
+    background-color: #E7E7E7;
+    line-height: 58px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: #434343;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+}
+.phone-input::placeholder {
+    color: #434343;
+}
+.phone-input.not-validated {
+    border: 1px solid #F33338;
+}
+
+.input-holder {
+    margin-top: 16px;
+    margin-bottom: 12px;
+    width: 100%;
+    position: relative;
+}
+.input-holder:after {
+    content: "+43";
+    color: #434343;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    display: block;
+    position: absolute;
+    left: 16px;
+    top: 20px;
+}
+.input-holder:before {
+    content: " ";
+    background-color: #434343;
+    height: 32px;
+    width: 1px;
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 60px;
+}
+.input-holder.pin-holder:after, .input-holder.pin-holder:before {
+    display: none;
+}
+
+.attention-text {
+    color: #EEE;
+    font-size: 14px;
+}
+
+.austria-terms {
+    text-align: center;
+    padding-right: 22px;
+    padding-left: 22px;
+    color: #A59B9B;
+    font-weight: 400;
+    font-size: 12px;
+    padding-top: 22px;
+}
+
+.download-icon {
+    background-image: url("../img/austria-download-icon.svg");
+    background-size: 17px 23px;
+    display: block;
+    margin-left: 15px;
+    width: 17px;
+    height: 23px;
+}
+
+.austria-banner {
+    background-image: url("../img/austria_banner.webp");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.main-subscribe-button, .send-phone-button {
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #53C75E;
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    padding: 0 12px;
+    line-height: 76px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.main-subscribe-button span, .send-phone-button span {
+    display: block;
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.austria-button-wrapper {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.backwards-link {
+    color: #A4A4A4;
+    text-align: center;
+    width: 100%;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 36px;
+    text-transform: capitalize;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -webkit-transition: all 0.4s ease-in;
+}
+.backwards-link:focus, .backwards-link:hover, .backwards-link:active {
+    color: #53C75E;
+    text-decoration: none;
+}
+
+.austria-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.austria-footer .footer-menu-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px 12px;
+    width: 100%;
+}
+.austria-footer .footer-menu-row a, .austria-footer .footer-menu-row a:link, .austria-footer .footer-menu-row a:not([href]) {
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    display: block;
+    position: relative;
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-size: 12px;
+    line-height: 40px;
+    transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -webkit-transition: all 0.4s ease-in;
+}
+.austria-footer .footer-menu-row a:focus, .austria-footer .footer-menu-row a:hover, .austria-footer .footer-menu-row a:active, .austria-footer .footer-menu-row a:link:focus, .austria-footer .footer-menu-row a:link:hover, .austria-footer .footer-menu-row a:link:active, .austria-footer .footer-menu-row a:not([href]):focus, .austria-footer .footer-menu-row a:not([href]):hover, .austria-footer .footer-menu-row a:not([href]):active {
+    color: #53C75E;
+    text-decoration: none;
+}
+.austria-footer .footer-menu-row a:after, .austria-footer .footer-menu-row a:link:after, .austria-footer .footer-menu-row a:not([href]):after {
+    content: " ";
+    display: block;
+    background-color: #464646;
+    height: 23px;
+    width: 1px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+}
+.austria-footer .footer-menu-row a:first-child:after, .austria-footer .footer-menu-row a:link:first-child:after, .austria-footer .footer-menu-row a:not([href]):first-child:after {
+    display: none;
+}
+.austria-footer .footer-menu-row a + a, .austria-footer .footer-menu-row a:link + a, .austria-footer .footer-menu-row a:not([href]) + a {
+    padding-left: 13px;
+}
+
+.austria-footer .footer-menu {
+    flex-wrap: wrap;
+}
+
+.austria-copyright {
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    text-align: center;
+}
+
+/*# sourceMappingURL=landings.css.map */

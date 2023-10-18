@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="no-js" lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Landing Austria Drei</title>
+    <link rel="apple-touch-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+
+    <meta name="HandheldFriendly" content="true"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen,print">
+
+</head>
+<body class="austria-drei">
+<main>
+    <style>
+        .landing-page-basic .element-wrapper {
+            z-index: 1;
+        }
+
+        .landing-page-basic .background-element-wrapper {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            z-index: 0;
+        }
+    </style>
+    <div class="landing-page-container "
+         style="display: grid;
+             grid-template-columns: repeat(9, 11.11111111vw);
+             grid-template-rows: repeat(17, 6.25vh);
+             background-color: #101010;
+             color: #ffffff">
+        <div class="element-wrapper" style="grid-area:1 / 1 / 9 / 10;z-index:0">
+            <div class="background bottom austria-banner" ></div>
+        </div>
+        <div class="element-wrapper" style="grid-area:1 / 6 / 3 / 10;z-index:1">
+            <div class="century-logo"><img src="img/logo-century-white.webp" alt="Century Logo"></div>
+        </div>
+        <div class="element-wrapper" style="grid-area:9 / 1 / 10 / 10;z-index:1">
+            <div class="over-btn-text">
+                Sie erhalten 30.000 Edelsteine pro Monat zur Nutzung im Spiel. Abonnement für 5,99 € inkl. MwSt pro Woche.
+            </div>
+        </div>
+        <div class="element-wrapper" style="grid-area:10 / 1 / 12 / 10 ;z-index:1">
+            <div class="austria-button-wrapper">
+                <form action="https://pwintegrations.github.io/austria-payment" method="get">
+                    <button
+                            type="submit"
+                            id="main-subscribe-button"
+                            class="main-subscribe-button"
+                    >
+                        <span>weiter</span><i class="download-icon"></i>
+                    </button>
+                    <a
+                            href="https://pwintegrations.github.io/austria-payment"
+                            class="DCBProtection"
+                            style="display: none"
+                    ></a>
+                </form>
+            </div>
+        </div>
+        <div class="element-wrapper" style="grid-area:12 / 1 / 15 / 10;z-index:1">
+            <div class="austria-terms">
+                Durch Klicken auf &lt;WEITER&gt; akzeptiere ich ausdrücklich die <a href="/privacy" class="text-link" target="_blank">Datenschutzrichtlinie</a> von Century's und ich nehme zur Kenntnis, dass der Diensteanbieter Century meine Rufnummer für Zwecke der Verrechnung des von mir bestellten Dienstes über meine Mobilfunkrechnung von meinem Mobilfunkanbieter DREI einholt.
+            </div>
+        </div>
+        <div class="element-wrapper" style="grid-area:15 / 1 / 16 / 10;z-index:1">
+            <button class="backwards-link" onclick="history.back()">
+                Abbrechen
+            </button>
+        </div>
+        <div class="element-wrapper" style="grid-area:16 / 1 / 19 / 10;z-index:1">
+            <div class="austria-footer">
+                <div class="footer-menu">
+                    <div class="footer-menu-row">
+                        <a href="">AGB</a>
+                        <a href="">Impressum</a>
+                        <a href="">Datenschutz</a>
+                    </div>
+                    <div class="footer-menu-row">
+                        <a href="">Kontakt</a>
+                        <a href="">Rücktrittsrecht</a>
+                        <a href="">Kündigung</a>
+                    </div>
+                </div>
+                <div class="copyright austria-copyright">
+                    ©2023 Alle Rechte vorbehalten.
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
