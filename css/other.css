@@ -263,8 +263,8 @@ header .container .row [class*=col-sm-] {
         height: 46px !important;
     }
 }
-footer {
-    background-image: url("../img/footer-img.webp");
+footer.inner-footer {
+    background-image: url("../img/footer-img.webp")!important;
     display: block;
     background-repeat: no-repeat;
     background-size: contain;
@@ -415,7 +415,7 @@ button {
     z-index: 50;
 }
 .button-to-top i {
-    background-image: url("../../images/arrow-button.svg");
+    background-image: url("../img/arrow-up.svg");
     display: block;
     background-repeat: no-repeat;
     background-size: cover;
@@ -731,7 +731,6 @@ main.inner-page {
     background: linear-gradient(180deg, rgb(29, 29, 29) 0%, rgb(10, 10, 14) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d1d1d",endColorstr="#0a0a0e",GradientType=1);
     padding-top: 60px;
-    padding-bottom: 55px;
 }
 main.inner-page .container-sm {
     padding-left: 28px;
@@ -3728,29 +3727,12 @@ main.landing-page .container .row [class*=col-] {
 footer.landing-footer {
     background-image: none;
 }
-footer.landing-footer:before {
-    content: " ";
-    background-image: url("../../images/sparks.webp");
-    background-size: 100%;
-    overflow: visible;
-    display: block;
-    height: 290px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-}
+
 
 @media screen and (min-width: 768px) {
     .landing-bg {
         background-position: center;
         min-height: 568px;
-    }
-    .landing-bg.subscribe-landing-bg {
-        background-image: url("../../images/banner-main-mobile-3.webp");
-    }
-    .landing-bg.confirm-landing-bg {
-        background-image: url("../../images/confirm-banner-tablet.webp");
     }
     .landing-bg {
         background-position: center;
