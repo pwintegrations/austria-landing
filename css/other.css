@@ -616,7 +616,7 @@ button.player-popup i {
     width: 31px;
     height: 31px;
     margin-top: -3px;
-    background-image: url("../../images/login-check.webp");
+    background-image: url("../img/login-check.webp");
 }
 
 .share-btn {
@@ -722,7 +722,7 @@ body.nav-open:after {
 
 main {
     margin-top: -60px;
-    min-height: calc(100vh - 60px - 120px);
+    min-height: calc(100vh - 60px);
 }
 main.inner-page {
     background: rgb(29, 29, 29);
@@ -731,6 +731,7 @@ main.inner-page {
     background: linear-gradient(180deg, rgb(29, 29, 29) 0%, rgb(10, 10, 14) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d1d1d",endColorstr="#0a0a0e",GradientType=1);
     padding-top: 60px;
+    min-height: calc(100vh - 60px);
 }
 main.inner-page .container-sm {
     padding-left: 28px;
