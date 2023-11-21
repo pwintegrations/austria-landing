@@ -284,15 +284,16 @@ footer.inner-footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 .footer-menu ul li {
-    line-height: 22px;
+    line-height: 26px;
 }
 .footer-menu ul li + li {
-    margin-left: 10px;
+    margin-left: 12px;
 }
 .footer-menu ul li a {
     text-decoration: underline;
