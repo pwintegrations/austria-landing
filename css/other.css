@@ -2009,7 +2009,7 @@ select.usual-select.error {
 }
 .accordion-button:not(.collapsed):after {
     content: " ";
-    background-image: url("../../images/accordeon-close.svg");
+    background-image: url("../img/accordeon-close.svg");
     background-size: 16px 16px;
     width: 16px;
     height: 16px;
@@ -2021,7 +2021,7 @@ select.usual-select.error {
 
 .accordion-button:after {
     content: " ";
-    background-image: url("../../images/accordeon-open.svg");
+    background-image: url("../img/accordeon-open.svg");
     background-size: 16px 16px;
     width: 16px;
     height: 16px;
@@ -2033,6 +2033,7 @@ select.usual-select.error {
 
 .faq-block {
     padding-top: 20px;
+    padding-bottom: 55px;
 }
 
 .link-block-wrapper {
